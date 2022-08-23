@@ -14,7 +14,7 @@ function ordernar_frase(frase) {
     for (let i = 0; i < frase.length - 1; i++) {
         for (let j = 0; j < frase.length - i - 1; j++) {
             if (frase[j].length < frase[j + 1].length) {
-                let aux = frase[j];
+                const aux = frase[j];
                 frase[j] = frase[j + 1];
                 frase[j + 1] = aux;
             }
